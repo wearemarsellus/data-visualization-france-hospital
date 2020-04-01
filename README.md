@@ -21,7 +21,7 @@ The app will start on http://localhost:3000
 npm run build
 ```
 
-### Lint code
+### Lint the code
 
 ```
 npm run lint # eslint + stylelint
