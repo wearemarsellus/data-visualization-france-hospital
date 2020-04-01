@@ -1,4 +1,4 @@
-# Wavlive front-end application
+# Data visualizations - France Hospitals
 
 ## Get started
 
