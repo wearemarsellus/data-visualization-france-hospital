@@ -6,7 +6,7 @@ import {
 } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-import localStoragePersister, { getStateFromLocalStorage } from 'utils/redux/storeLocalStoragePersister'
+// import localStoragePersister, { getStateFromLocalStorage } from 'utils/redux/storeLocalStoragePersister'
 
 // Middlewares
 import addEntitiesMiddleware from './middlewares/addEntitiesMiddleware'
@@ -24,12 +24,10 @@ const bindMiddleware = (middlewares: any[]): StoreEnhancer<{ dispatch: unknown }
   return applyMiddleware(...middlewares)
 }
 
-const localStorageState = getStateFromLocalStorage()
-
 function configureStore(initialState = {}): Store {
   const preloadedStates = {
     ...initialState,
-    ...localStorageState
+    // ...getStateFromLocalStorage()
   }
 
   const store = createStore(
@@ -43,7 +41,7 @@ function configureStore(initialState = {}): Store {
     ])
   )
 
-  localStoragePersister(['interface'])(store)
+  // localStoragePersister(['interface'])(store)
 
   return store
 }

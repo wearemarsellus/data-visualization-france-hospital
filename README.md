@@ -36,8 +36,6 @@ App tech stack:
 - [grommet](https://github.com/grommet/grommet) (styling)
 - [styled-components](https://github.com/styled-components/styled-components) (styling)
 - [redux](https://github.com/reduxjs/redux) + [immutable.js](https://immutable-js.github.io/immutable-js/) (data management)
-- [react-player](https://github.com/CookPete/react-player) (uses [hls.js](https://github.com/video-dev/hls.js/) to play tracks)
-- [redux-saga](https://github.com/redux-saga/redux-saga) (to handle parallel behaviors for example in player)
 
 ### Main files and folders
 
@@ -54,6 +52,5 @@ App tech stack:
   - /entities - normalized entities
     - hospital - (actions, reducers, selectors)
     - ...
-  - /interface - interface state (saved in localstorage)
 - **/theme** - grommet theme custom configuration
 - **/utils**
