@@ -35,7 +35,7 @@ App tech stack:
 - [next.js](https://github.com/zeit/next.js/)
 - [grommet](https://github.com/grommet/grommet) (styling)
 - [styled-components](https://github.com/styled-components/styled-components) (styling)
-- [redux](https://github.com/reduxjs/redux) + [immutable.js](https://immutable-js.github.io/immutable-js/) (data management)
+- [redux](https://github.com/reduxjs/redux) (data management)
 
 ### Main files and folders
 
